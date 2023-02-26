@@ -16,7 +16,8 @@
 
 .nav{
     display: grid;
-    grid-template-rows: 1fr 15fr 3fr;
+    grid-template-rows: 1fr 5fr 3fr;
+    grid-row: 1/2;
     height: 100vh;
     background-color: #3b82f6;
     padding-left: 15px;
@@ -52,6 +53,7 @@
     padding-bottom: 75px;
     grid-template-rows: repeat(3,50px);
     justify-content: start;
+  
 }
 
 
@@ -101,10 +103,11 @@ form{
 
 input{
     width: clamp(100px,40rem,1000px);
+    height:40px;
     border-radius: 15px;
     border: 1px solid rgb(136, 136, 136,0.3);
     background-color: rgb(136, 136, 136,0.3);
-    font-size: 1.75rem;
+    font-size: 1rem;
 }
 
 .small-pic img{
@@ -128,13 +131,158 @@ input{
     border-radius: 50%;
 }
 
+.intro{
+    font-weight: 600;
+    justify-self: start;
+}
 
+.welcome{
+    font-size: 1rem;
+}
+
+.name{
+    font-size: 1.5rem;
+}
+
+button{
+    border:none;
+    background-color: #3b82f6;
+    width:10rem;
+    height:2rem;
+    font-size: 0.85rem;
+    border-radius: 25px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
 
 .content{
-  
-    background-color: gray;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    background-color: rgb(122, 121, 121,0.2);
+    padding-bottom: 35px;
     box-sizing: border-box;
+   
 }
+
+.projects-area{
+    display: grid;
+    grid-row: 1/3;
+    grid-template-rows: 30px 20fr;
+    margin: 25px;
+    margin-bottom: 0px;
+
+}
+
+.title-projects{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.projects-grids{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px,1fr));
+    gap:25px;
+   
+}
+
+.project-grid{
+    display: grid;
+    grid-template-columns: 0.4fr 25fr;
+    background-color: white;
+    border-radius: 15px;
+    
+   
+}
+
+.side-color{
+    background-color: rgba(255, 123, 0, 0.8);
+    grid-row: 1/5;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+   
+
+}
+
+.main-project{
+    display: grid;
+    padding: 25px 15px;
+    gap:5px;
+}
+
+.project-caption{
+    font-size: 0.95rem;
+    font-weight: 600;
+    align-self: center;
+}
+
+.project-description{
+    padding-right: 175px;
+    color: gray;
+    font-size: 0.85rem;
+}
+
+.grid-options{
+    justify-self: end;
+    letter-spacing: 25px;
+    padding-top: 25px;
+    padding-right: 15px;
+}
+
+.side-content{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.title-announcements{
+    display: grid;
+    grid-template-rows: 30px 10fr;
+    margin: 25px;
+    margin-bottom: 0px;
+
+}
+
+.announcements{
+    font-size: 1rem;
+    font-weight: 600;
+    gap:5px;
+}
+
+.announcement-grids{
+    background-color: white;
+    display: grid;
+    grid-template-rows: 1fr 1px 1fr 1px 1fr;
+    padding: 25px 15px;
+    border-radius: 15px;
+    gap:5px;
+
+}
+
+.announcement-grid{
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    gap:2px;
+}
+
+.side-caption{
+    font-size: 0.80rem;
+    font-weight: 600;
+}
+
+.announcement-description{
+    font-size: 0.75rem;
+    color: gray;
+}
+
+.row-border{
+    border-top: 1px solid black;
+    height: 1px;
+}
+
+.announcement-grids>.announcement-grid{
+    margin-top: 10px;
+}
+
 
 .main-logo{
     width: 4.5rem;
@@ -151,9 +299,13 @@ svg{
 }
 
 .link:hover .logo, .link:hover a{
-    fill:black;
-    color: black;
+    fill:rgb(0, 0, 0,0.5);
+    color:rgb(0, 0, 0,0.5);
     cursor: pointer;
     font-size: 1.5rem;
+}
+
+button:hover{
+    color:rgb(0, 0, 0,0.5);
 }
 
