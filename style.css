@@ -56,7 +56,6 @@
   
 }
 
-
 .link{
     display: grid;
     grid-auto-flow: column;
@@ -232,6 +231,7 @@ button{
 .side-content{
     display: grid;
     grid-template-rows: 1fr 1fr;
+    margin-bottom: 0px;
 }
 
 .title-announcements{
@@ -275,12 +275,69 @@ button{
 }
 
 .row-border{
-    border-top: 1px solid black;
+    border-top: 1px solid rgb(0, 0, 0,0.09);
     height: 1px;
 }
 
 .announcement-grids>.announcement-grid{
     margin-top: 10px;
+}
+
+.title-trending{
+    display: grid;
+    grid-template-rows: 30px 10fr;
+    margin: 25px;
+    margin-bottom: 0px;
+}
+
+.trending{
+    font-size: 1rem;
+    font-weight: 600;
+    gap:5px;
+}
+
+.trending-grids{
+    background-color: white;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    padding: 25px 15px;
+    border-radius: 15px;
+    gap:10px;
+    
+}
+
+.trending-grid{
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    grid-auto-flow: column;
+    align-content: center;
+    gap:10px; 
+}
+
+.other-user-pic{
+    width:2.5rem;
+
+}
+
+.other-user-pic img{
+    width:2.5rem;
+    height:auto;
+    border-radius: 50%;
+
+}
+
+.other-user-info{
+    align-self: center;
+}
+
+.other-user-id{
+    font-size: 0.8rem;
+}
+
+.other-user-name{
+    font-size: 0.75rem;
+    color: gray;
+
 }
 
 
